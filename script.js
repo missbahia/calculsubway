@@ -118,8 +118,10 @@ alert("Copied!");
 
 
 
-document.getElementById("themeBtn")
-.onclick=()=>{
+const themeBtn=document.getElementById("themeBtn");
+
+
+themeBtn.onclick=()=>{
 
 document.body.classList.toggle("dark");
 
