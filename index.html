@@ -1,84 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caisse Calculator by otm05</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+<title>Cash Counter Canada | otm05</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
+
 <div class="app">
 
-    <header>
 
-        <div class="brand">
-            <img src="assets/logo.png" alt="Logo">
-            <div>
-                <h1>Caisse Calculator</h1>
-                <span>canada money</span>
-            </div>
-        </div>
-
-        <div class="theme-toggle" id="themeBtn">
-    <span>☀️</span>
-    <span>🌙</span>
-</div>
-
-    </header>
+<header class="header">
 
 
-    <main>
+<div class="brand">
 
-        <section class="money-section">
+<div class="logo-box">
 
-            <h2>💵 Billets</h2>
-
-            <div id="bills" class="cards"></div>
-
-
-            <h2>🪙 Pièces</h2>
-
-            <div id="coins" class="cards"></div>
-
-        </section>
-
-
-        <section class="total-box">
-
-            <p>TOTAL CASH</p>
-
-            <h3>
-                <span id="total">0.00</span>
-            </h3>
-
-            <button id="copyBtn">
-                📋 Copy Total
-            </button>
-
-
-            <button id="resetBtn">
-                🔄 Reset
-            </button>
-
-        </section>
-
-
-    </main>
+<img src="assets/logo.png" alt="Logo">
 
 </div>
+
+
+<div>
+
+<h1>
+Caisse Calculator
+</h1>
+
+<p>
+Canada POS Calculator
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="theme-toggle" id="themeBtn">
+
+<span>☀️</span>
+
+<div class="toggle-circle"></div>
+
+<span>🌙</span>
+
+</div>
+
+
+</header>
+
+
+
+
+<main>
+
+
+
+<section class="cash-area">
+
+
+<h2>💵 Billets</h2>
+
+
+<div id="bills" class="cash-grid"></div>
+
+
+
+<h2>🪙 Pièces</h2>
+
+
+<div id="coins" class="cash-grid"></div>
+
+
+</section>
+
+
+
+
+
+
+<section class="total-card">
+
+
+<div class="total-title">
+TOTAL CASH
+</div>
+
+
+<div class="total-value">
+
+<span id="total">
+0.00
+</span>
+
+</div>
+
+
+
+<div class="actions">
+
+
+<button id="copyBtn" class="btn copy">
+
+📋 Copy Total
+
+</button>
+
+
+<button id="resetBtn" class="btn reset">
+
+🔄 Reset
+
+</button>
+
+
+</div>
+
+
+</section>
+
+
+
+
+</main>
+
+
+
+
 <footer>
-    <span>Caisse Calculator</span>
-    <small>
-        Designed & Developed by <b>otm05</b>
-    </small>
+
+
+<p>
+Caisse Calculator
+</p>
+
+<span>
+Designed & Developed by <b>otm05</b>
+</span>
+
+
+<div class="version">
+
+</div>
+
+
 </footer>
+
+
+
+</div>
+
+
+
+<div id="toast"></div>
+
+
 
 <script src="script.js"></script>
 
+
 </body>
+
 </html>
